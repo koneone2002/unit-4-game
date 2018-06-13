@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+     <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Crystals Collector!</h1>
+    </header>
+
+    <div class="container">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time the game starts, the crystals will have new values.</p>
+        <h2>Good Luck!</h2>
+    </div>
+
+    <div class="container">
+        <h2 id="randomNum"></h2>
+    </div>
+    <div class="container wins losses">
+        <p id="wins">Wins: </p>
+        <p id="losses">Losses: </p>
+    </div>
+    <div class="container jewels">
+        <img src="assets/images/blue jewel.png" class="jewel jewel1" id="blue" alt="blue jewel">
+        <img src="assets/images/red jewel.png" class="jewel jewel2" id="red"  alt="red jewel">
+        <img src="assets/images/white jewel.png" class="jewel jewel3" id="white" alt="white jewel">
+        <img src="assets/images/green jewel.png" class="jewel jewel4" id="green" alt="green jewel">
+    </div>
+    <div class="container" id="playerScore">
+        <p>Your total score is: </p>
+    </div>
+    <div class="container totalScore" id="result"></div>
+
+    
+</body>
+    <script src="assets/javascript/game.js"></script>
+        
+    
+</html>
