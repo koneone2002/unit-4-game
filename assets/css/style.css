@@ -1,11 +1,167 @@
-#jewelHolder {
+/* #jewelHolder {
     display: inline-block;
     border: 1px solid black;
 
-}
+} */
 
 h1 {
-    color: green;
+    
+    padding: 20px ; 
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    background-color: white;
+    -webkit-text-stroke: 1px white;
+
+    color:red;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+   
+    
+    text-align: center;
   
 
 }
+ body {
+   background-image: url("../images/pexels1.jpeg");
+   background-repeat: no-repeat; 
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+
+   
+   
+}
+ 
+header {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto 30px 30px;
+   
+    border: 3px solid black;
+    
+
+    
+
+}
+.black {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto 30px 30px;
+    background-color: black;
+    
+
+}
+
+p {
+    font-family: 'Henny Penny', cursive; 
+    text-align: center; 
+}
+
+#rules {
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border: 3px solid black;
+
+}
+
+h2 {
+    
+    width: 30%;
+    margin: 0 auto 30px 30px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    
+}
+
+ img {
+    border: 5px solid white;  
+    background-color: black;
+    padding: 20px;
+    margin: 30px 20px 0px 20px;
+ 
+}
+.containerJewels {
+    clear: both;
+    margin: 30px;
+  
+    
+}
+.jewels {  
+
+    display: inline;
+
+}
+
+
+#playerScore{
+    clear: both;
+    margin: 0 auto 30px 30px;
+    background-color: black;
+    width: 30%;
+    padding: 25px;
+    
+    
+}
+#result {
+    
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-align: left;
+
+}
+ p#wins {
+    float: left;
+    display: inline;
+    margin: 0 px 30px 0px 50px;
+    width: 15%;
+    background-color: red;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+
+}
+p#losses {
+    float: right;
+    display: inline;
+    margin: 0 px 30px 0px 50px;
+    width: 15%;
+    background-color: red;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+
+}
+.footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    /* padding: 20px; */
+    bottom: 0;
+    left: 0;
+    border-bottom: 5px solid black;
+    border-top: 5px solid red;
+
+}
+
+/* #winner {
+    background-color: red;
+    padding: 30px;
+    color: white;
+} */

@@ -1,49 +1,47 @@
-// $(".jewel").on("click", function () {
-//     $(this).height(200);
-// });
+
 $(document).ready(function () {
-  
+    // array to hold the random numbers for the 4 jewels
     var jewels = [];
     var wins = 0;
     var losses = 0;
-    var jewelNum = 0;
+    // var jewelNum = 0;
     // this is the target number
     var random = "";
     // this is the result of the addition of jewels clicked
     var result = 0;
     // this is so the user can't click after win/loss
     var isClicked = false;
+
     
     // create initialization function which will reset upon win/loss or at start
     
 
     function initializeGame() {
+        // $("#winner").hide(); 
+        // $("#loser").hide(); 
+        createRandom();
         var jewelBlue = "";
         var jewelRed = "";
         var jewelWhite = "";
         var jewelGreen = "";
         var random = "";
-        var result = "";
+        var result = 0;
         var isClicked = false;
         
         $("#blue, #red, #white, #green, #result").empty();
+        
 
     }
     // create a random number for var random from 19-120
     function createRandom(min, max) {
         random = Math.floor(Math.random() * (120 - 20) + 20);
 
-        $("#randomNum").html(random);
-        console.log(random);
+        $("#randomNum").text("The number to guess is: " + random);
+        //console.log(random);
 
 
     }
-    createRandom();
-
-
-
-
-
+    
 
     // need to create random numbers for jeweles from 1-12 - the jewel will keep the random number until win/loss, but will reset to a new value upon initializeGame()
      
@@ -65,12 +63,14 @@ $(document).ready(function () {
 
     makeJewelsRandom();
 
-
+    
     
 
     if (isClicked === true) {
+    // create an on click event which will add the assigned number to any click of jewels until either result equals random or goes over random - and show the value in #playerScore 
         
         $(".jewel").on("click", function () {
+
             var num1 = $(this).attr("id");
             
             if (num1 === "blue") {
@@ -83,27 +83,33 @@ $(document).ready(function () {
                 result += jewelGreen;
             }
             console.log(num1);
-            //num1 = parseInt(num1);
+            
             
            
-            $("#result").text(result);
+            $("#result").text("Your total so far: " + result);
             // create validation - if the result === random
             if(result === random) {
+            // $("#winner").show(); 
             alert("you won!");
             wins++;
             // wins will add to wins in HTML
-            $("#wins").text(wins);
-            isClicked = false;       
+            $("#wins").text("Wins: " + wins);
+            isClicked = false;
+            result = 0;
+            
+                  
             initializeGame();
             // if result > random
             } else if 
                 (result > random) {
-                    alert("You lose!");
+                    // $("#loser").show(); 
+                     alert("You lose!");
                      // losses will add to losses in HTML
                     losses++
                     isClicked = false;
-                    $("#losses").text(losses);
-                    
+                    $("#losses").text("Losses: " + losses);
+                    result = 0;
+                                       
                     
                     initializeGame();
                 }
@@ -115,7 +121,7 @@ $(document).ready(function () {
    
   
     });
-    // create an on click event which will add the assigned number to any click of jewels until either result equals random or goes over random - and show the value in #playerScore
+    
 
 
 

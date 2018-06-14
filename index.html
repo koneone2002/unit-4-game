@@ -7,40 +7,71 @@
     <title>Crystal Game</title>
      <!-- Added link to the jQuery Library -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Luckiest+Guy|Ranchers" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Crystals Collector!</h1>
+        <h1>Crystals Collector Game!</h1>
     </header>
 
-    <div class="container">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time the game starts, the crystals will have new values.</p>
-        <h2>Good Luck!</h2>
-    </div>
+    <div class="container info">
+       
+        <div class="container black">
+                <div id="rules">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time the game starts, the crystals will have new values.</p>
+        
+                </div>
+            <h2>Good Luck!</h2>
+            
+        
+            
+                <h2 id="randomNum"></h2>
+            
+            <div class="containerWinsLosses">
+                <p id="wins">Wins: </p>
+                <p id="losses">Losses: </p>
+            </div>
+            <!-- The Jewels -->
+            <div class="containerJewels">
+                <div class="jewels">
+                        <img src="assets/images/blue jewel.png" class="jewel jewel1" id="blue" alt="blue jewel">
+                </div>
+                <div class="jewels">
+                        <img src="assets/images/red jewel.png" class="jewel jewel2" id="red"  alt="red jewel">
+                </div>
+                <div class="jewels">
+                        <img src="assets/images/white jewel.png" class="jewel jewel3" id="white" alt="white jewel">
+                </div>
+                <div class="jewels">
+                        <img src="assets/images/green jewel.png" class="jewel jewel4" id="green" alt="green jewel">
+                </div>
+                
+            </div>
+            <div class="container" id="playerScore">
+                <div class="container totalScore" id="result"></div>
+            </div>
 
-    <div class="container">
-        <h2 id="randomNum"></h2>
-    </div>
-    <div class="container wins losses">
-        <p id="wins">Wins: </p>
-        <p id="losses">Losses: </p>
-    </div>
-    <div class="container jewels">
-        <img src="assets/images/blue jewel.png" class="jewel jewel1" id="blue" alt="blue jewel">
-        <img src="assets/images/red jewel.png" class="jewel jewel2" id="red"  alt="red jewel">
-        <img src="assets/images/white jewel.png" class="jewel jewel3" id="white" alt="white jewel">
-        <img src="assets/images/green jewel.png" class="jewel jewel4" id="green" alt="green jewel">
-    </div>
-    <div class="container" id="playerScore">
-        <p>Your total score is: </p>
-    </div>
-    <div class="container totalScore" id="result"></div>
-
+        </div>
+        
+     <!-- <div id="winner">
+         <h2>You WIN!!</h2>
+     </div>
+     <div id="loser">
+            <h2>You LOSE!!</h2>
+        </div>     -->
+   
+        <div>
+              
+                    <div class=" footer">
+                        <p>Copyright</p>
+                    </div>
+                </div>
+            </div>
     
 </body>
     <script src="assets/javascript/game.js"></script>
