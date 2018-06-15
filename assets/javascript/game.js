@@ -17,8 +17,9 @@ $(document).ready(function () {
     
 
     function initializeGame() {
-        // $("#winner").hide(); 
-        // $("#loser").hide(); 
+        $(".containerJewels").show(); 
+        $("#loser").hide();
+        $("#winner").hide();  
         createRandom();
         var jewelBlue = "";
         var jewelRed = "";
@@ -89,29 +90,37 @@ $(document).ready(function () {
             $("#result").text("Your total so far: " + result);
             // create validation - if the result === random
             if(result === random) {
-            // $("#winner").show(); 
-            alert("you won!");
+            // $("#winner").show();
+            $(".containerJewels").hide();
+            $("#winner").show(); 
+            //alert("you won!");
             wins++;
             // wins will add to wins in HTML
             $("#wins").text("Wins: " + wins);
             isClicked = false;
             result = 0;
-            
+            setTimeout(initializeGame, 3000);
                   
-            initializeGame();
+            
             // if result > random
             } else if 
                 (result > random) {
-                    // $("#loser").show(); 
-                     alert("You lose!");
+                    
+                    
+                    $(".containerJewels").hide();
+                    $("#loser").show(); 
+                    
+                     //alert("You lose!");
                      // losses will add to losses in HTML
                     losses++
                     isClicked = false;
                     $("#losses").text("Losses: " + losses);
                     result = 0;
-                                       
+                    setTimeout(initializeGame, 3000);
                     
-                    initializeGame();
+                                   
+                    
+                    
                 }
             });
 

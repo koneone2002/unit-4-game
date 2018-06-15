@@ -67,17 +67,18 @@ p {
     margin: 0 auto;
     background-color: white;
     border: 3px solid black;
+    line-height: 40px;
 
 }
 
 h2 {
     
-    width: 30%;
+    width: 85%;
     margin: 0 auto 30px 30px;
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 1px;
@@ -93,7 +94,7 @@ h2 {
 }
 .containerJewels {
     clear: both;
-    margin: 30px;
+    margin: 67px;
   
     
 }
@@ -108,51 +109,51 @@ h2 {
     clear: both;
     margin: 0 auto 30px 30px;
     background-color: black;
-    width: 30%;
+    width: 85%;
     padding: 25px;
     
     
 }
 #result {
-    
+    width: 100%;
     color: white;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 1px;
     font-size: 28px;
-    text-align: left;
+    text-align: center;
 
 }
  p#wins {
     float: left;
     display: inline;
-    margin: 0 px 30px 0px 50px;
+    margin: 0 px 30px 30px 50px;
     width: 15%;
     background-color: red;
-    font-family: sans-serif;
+    font-family: 'Anton', sans-serif;
     color: white;
     font-size: 20px;
     padding: 20px 30px 20px 30px;
-    text-align: left;
+    text-align: center;
 
 }
 p#losses {
     float: right;
     display: inline;
-    margin: 0 px 30px 0px 50px;
+    margin: 0 px 30px 30px 50px;
     width: 15%;
     background-color: red;
-    font-family: sans-serif;
+    font-family: 'Anton', sans-serif;
     color: white;
     font-size: 20px;
     padding: 20px 30px 20px 30px;
-    text-align: left;
+    text-align: center;
 
 }
 .footer {
     background-color: black;
     width: 100%;
     color: white;
-    /* padding: 20px; */
+    padding: 20px; 
     bottom: 0;
     left: 0;
     border-bottom: 5px solid black;
@@ -160,8 +161,16 @@ p#losses {
 
 }
 
-/* #winner {
+#winner h2 {
+    width: 75%;
     background-color: red;
     padding: 30px;
     color: white;
-} */
+}
+#loser h2 {
+    width: 75%;
+    background-color: red;
+    padding: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
