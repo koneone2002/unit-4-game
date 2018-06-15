@@ -26,6 +26,7 @@ h1 {
 
 }
  body {
+     width: 690px;
    background-image: url("../images/pexels1.jpeg");
    background-repeat: no-repeat; 
    background-position: center;
