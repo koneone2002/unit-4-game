@@ -1,177 +1,145 @@
-/* #jewelHolder {
-    display: inline-block;
-    border: 1px solid black;
-
-} */
-
-h1 {
-    
-    padding: 20px ; 
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 60px;
-    background-color: white;
-    -webkit-text-stroke: 1px white;
-
-    color:red;
-    text-shadow:
-        3px 3px 0 #000,
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
-   
-    
-    text-align: center;
-  
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
- body {
-    width: 1080px;
-   background-image: url("../images/pexels1.jpeg");
-   background-repeat: no-repeat; 
-   background-position: center;
-   background-size: cover;
-   height: 100%;
 
-   
-   
+body {
+  font-family: 'Skranji', cursive;
+  line-height: 1.5;
 }
- 
+
 header {
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto 30px 30px;
-   
-    border: 3px solid black;
-    
-
-    
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #111;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  border-bottom: 5px solid red;
 }
-.black {
-    padding-top: 20px;
-    width: 80%;
-    margin: 0 auto 30px 30px;
-    background-color: black;
-    
-
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+h2 {
+  width: 85%;
+  margin: 0 auto 30px 30px;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 p {
-    font-family: 'Henny Penny', cursive; 
-    text-align: center; 
+  text-align: center;
 }
-
-#rules {
-    padding: 30px;
-    width: 80%;
-    margin: 0 auto;
-    background-color: white;
-    border: 3px solid black;
-    line-height: 40px;
-
-}
-
-h2 {
-    
-    width: 85%;
-    margin: 0 auto 30px 30px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 1px;
-    
-}
-
- img {
-    border: 5px solid white;  
-    background-color: black;
-    padding: 20px;
-    margin: 30px 20px 0px 20px;
- 
-}
-.containerJewels {
-    clear: both;
-    margin: 67px;
-  
-    
-}
-.jewels {  
-
-    display: inline;
-
-}
-
-
-#playerScore{
-    clear: both;
-    margin: 0 auto 30px 30px;
-    background-color: black;
-    width: 85%;
-    padding: 25px;
-    
-    
+img {
+  border: 5px solid white;
+  background-color: black;
+  padding: 20px;
+  margin: 30px 20px 0px 20px;
 }
 #result {
-    width: 100%;
-    color: white;
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 1px;
-    font-size: 28px;
-    text-align: center;
-
+  margin: 2rem 0;
+  color: #fff;
+  font-size: 2rem;
 }
- p#wins {
-    float: left;
-    display: inline;
-    margin: 0 px 30px 30px 50px;
-    width: 15%;
-    background-color: red;
-    font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 20px;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
-
-}
-p#losses {
-    float: right;
-    display: inline;
-    margin: 0 px 30px 30px 50px;
-    width: 15%;
-    background-color: red;
-    font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 20px;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
-
-}
-.footer {
-    background-color: black;
-    width: 100%;
-    color: white;
-    padding: 20px; 
-    bottom: 0;
-    left: 0;
-    border-bottom: 5px solid black;
-    border-top: 5px solid red;
-
+#randomNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #fff;
+  align-content: center;
 }
 
-#winner h2 {
-    width: 75%;
-    background-color: red;
-    padding: 30px;
-    color: white;
+#wins,
+#losses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
 }
+#winner h2,
 #loser h2 {
-    width: 75%;
-    background-color: red;
-    padding: 30px;
-    color: white;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  background-color: red;
+  margin: auto;
+  color: #fff;
+}
+.container-black {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 20px;
+  width: 80%;
+  background-color: #111;
+}
+
+.containerJewels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-totalScore {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.containerWinsLosses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #111;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  padding: 20px;
+  border-top: 5px solid red;
+}
+
+@media (max-width: 850px) {
+  .containerJewels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .containerJewels {
+    grid-template-columns: 1fr;
+  }
 }
