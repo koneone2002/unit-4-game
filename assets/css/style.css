@@ -61,11 +61,6 @@ img {
 
 #wins,
 #losses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-top: 2rem;
   background-color: red;
   color: #fff;
@@ -116,9 +111,6 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .footer {
